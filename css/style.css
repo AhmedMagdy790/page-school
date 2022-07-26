@@ -1,0 +1,461 @@
+/* Start Variables */
+
+:root {
+    --main-Color: ;
+    --secondary-Color: ;
+    --color-pr: #6c6d6e;
+    --color-Title: #082465;
+}
+
+/* End Variables */
+
+/* Start Globle Rules */
+
+* {
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h2,h1,p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: #fec913;
+    width: 180px;
+    padding: 15px 0;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.pd-60 {
+    padding: 60px 0;
+}
+
+/* Title Globle */
+
+.title {
+    color: #082465;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 30px 0 10px;
+}
+
+.title + p {
+    text-align: center;
+    color: var(--color-pr);
+    margin-bottom: 100px;
+    max-width: 900px;
+    line-height: 1.6;
+}
+
+.center-y{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* End Globle Rules */
+
+/* Start Header */
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo h2 { 
+    margin-left: -22px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.header .logo img {
+    width: 90px;
+    margin-bottom: -15px;
+}
+
+.header .links {
+    list-style: none;
+    flex: 1;
+    text-align: right;
+}
+
+.header .links li {
+    display: inline-block;
+}
+
+.header .links li a {
+    text-decoration: none;
+    color: #000;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.header .search {
+    padding-left: 40px;
+}
+
+/* End Header */
+
+/* Start Home */
+
+.home {
+    width: 100%;
+    height: 100vh;  
+    position: relative;
+}
+
+.home-text {
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+}
+
+.home-text h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.home-text h1 span{
+    color: #fec913;
+    font-size: 60px;
+}
+
+.home-text p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+.home-text .btn:hover {
+    background-color: #ffe281;
+    transition: .3s;
+}
+
+.home-images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home-images img {
+    width: 50%; 
+}
+
+.img-right {
+    padding: 30px;
+    margin-top: 100px;
+}
+
+/* End Home */
+
+/* Start About */
+
+.about .container {
+   
+}
+
+.about img {
+    width: 550px;
+    margin-bottom: 100px;
+}
+
+.about .btn {
+    margin-bottom: 50px;
+}
+
+/* End About */
+
+/* Start Our  */
+
+.our-section .container {
+
+}
+
+.images-our {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.images-our li img{
+    width: 100%;
+    height: 200px;
+}
+
+/* End Our  */
+
+/* Start vehicles */
+
+
+
+/* End vehicles */
+
+/* Start students */
+
+.students-section {
+
+}
+
+.students-section .card {
+    width: 800px;
+    border: 1px solid rgb(0, 0, 0, .1);
+    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+} 
+
+.card .item-img {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card .item-img .img{  
+    overflow: hidden;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.card .item-img img {
+    width: 100%;
+} 
+
+.card .item-img .text h3{
+    color: var(--color-Title);
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.card .item-img .text span {
+    color: var(--color-pr);
+    font-size: 14px;
+}
+
+.card .item-text p {
+    color: var(--color-pr);
+    line-height: 1.6;
+}
+
+
+/* End students */
+
+/* Start Contact */
+
+.contact {
+    position: relative;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -30%;
+    width: 400px;
+    height: 400px;
+    background-color: var(--color-Title);
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0, 0.5);
+}
+
+.contact .container {
+    padding: 0 100px;
+}
+
+.contact form {
+    width: 100%;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    background-color: #dedee0;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+    color: #fff;
+}
+
+.contact form textarea {
+    position: relative;
+}
+
+.contact form textarea::placeholder {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contact .btn {
+    border-radius: 0;
+}
+
+.contact-images {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.contact-images .images-map {
+    position: relative;
+}
+
+.contact-images .images-map .img-map {
+    width: 100%;
+}
+
+.layer-img {
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-Title);
+    width: 600px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+.layer-img img {
+    width: 50%;
+}
+
+.layer-img .text {
+    width: 50%;
+    padding: 20px;
+}
+
+.layer-img .text h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.layer-img .text p {
+    font-size: 13px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.layer-img .text .btn {
+    font-size: 12px;
+    width: 100px;
+    padding: 8px;
+    margin: 0;
+}
+
+
+/* End Contact */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Media */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px
+    }
+}
+
+/* End Media */
